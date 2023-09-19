@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.7.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Connector1CDO\Connector1CDO.csproj" />
+    <ProjectReference Include="..\Connector1CUpp\Connector1CUpp.csproj" />
+    <ProjectReference Include="..\DirectumConnector\DirectumConnector.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
